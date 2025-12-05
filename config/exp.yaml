@@ -22,8 +22,9 @@ exp:
   seed: 42
 
 logger:
-  name: Log
-  save: true
+  name: NewLog
+  log_dir: (/Users/luandechery/Documents/faculdade/python/federated_learning/data)
+  
 
 protocol:
   eligible_perc: 0.2
