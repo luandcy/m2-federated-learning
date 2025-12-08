@@ -4,7 +4,8 @@ data:
     name: mnist
     path: ./data
   distribution:
-    name: iid
+    name: dir
+    beta: 0.02
   keep_test: true
   sampling_perc: 1.0
   server_split: 0.0
@@ -23,10 +24,10 @@ exp:
 
 logger:
   name: NewLog
-  log_dir: logs/
+  log_dir: (./logs)
   
 
 protocol:
-  eligible_perc: 0.2
+  eligible_perc: 0.2    # percentage of clients selected each round
   n_clients: 100
   n_rounds: 100
